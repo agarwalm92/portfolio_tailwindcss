@@ -4,7 +4,7 @@ import HeroImage from "../assets/heroImage.jpg";
 
 const Main = () => {
   return (
-    <div>
+    <div id="main">
       <img className="w-full h-screen object-cover" src={HeroImage} />
       <div className="w-full h-screen absolute top-0 left-0">
         <div className="max-w-[700px] m-auto flex flex-col lg:items-start items-center w-full h-full justify-center">
