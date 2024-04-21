@@ -67,7 +67,7 @@ const Contact = () => {
           <label className="contact-label">Message</label>
           <textarea
             ref={messageRef}
-            rows="10"
+            rows="5"
             name="message"
             className="border-2 rounded-lg p-3 border-gray-300"
           />

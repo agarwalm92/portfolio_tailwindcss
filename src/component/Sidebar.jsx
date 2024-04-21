@@ -9,7 +9,16 @@ const Sidebar = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
-    console.log("state");
+  };
+
+  const handleDownload = () => {
+    const pdfUrl = "path-to-your-pdf.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "mayank-agarwal-resume.pdf"; // Name of the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -45,8 +54,8 @@ const Sidebar = () => {
             <span className="pl-4">Project</span>
           </a>
           <a
-            onClick={handleNav}
-            href="#resume"
+            href="#"
+            onClick={handleDownload}
             className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200"
           >
             <BsPerson size={20} />
