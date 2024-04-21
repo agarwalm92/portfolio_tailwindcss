@@ -22,3 +22,15 @@
 .section {
   @apply max-w-[1040px] m-auto md:pl-20 p-4 py-8;
 }
+
+.contact-div {
+  @apply flex flex-col p-2;
+}
+
+.contact-label {
+  @apply uppercase text-sm py-2;
+}
+
+.contact-input {
+  @apply border-2 rounded-lg p-3 flex border-gray-300;
+}
